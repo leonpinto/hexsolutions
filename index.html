@@ -11,6 +11,25 @@
 
     <link rel="icon" href="images/icon.png" type="image/icon type">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+
+        $(function() {
+
+            $(".toggle").on("click", function() {
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active")
+                }
+                else {
+                    $(".item").addClass("active")
+                }
+            })
+
+        });
+
+    </script>
+
 
 </head>
 <body>
@@ -24,23 +43,49 @@
 
     <!-- Navigation -->
     <div class="navbar">
-        <nav>
+
+        <nav class="menu">
 
             <ul class="nav_links">
-                
                 <li><div class="dropdown"><a href="index.html">Home</a></div></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="/">About Us</a></li>
                 <li><a href="/">Testimonials</a></li>
+            </ul>
 
+
+            
+        </nav>
+        <a href="/" class="button_link">
+                <button>
+                    Contact Us
+                </button>
+            </a>  
+    </div>
+
+    <!-- Mobile Navbar -->
+
+    <div class="navbar-mobile">
+
+        <nav class="menu-mobile">
+
+            <ul class="nav_links-mobile">
+                <li class="logo" ><a href="index.html">HEX Solutions Inc.</a></li>
+                <li class="item" ><a href="/">Services</a></li>
+                <li class="item" ><a href="/">About Us</a></li>
+                <li class="item" ><a href="/">Testimonials</a></li>
+                <li class="item button" >
+                    <a href="/">
+                        <button>
+                            Contact Us
+                        </button>
+                    </a>
+                </li>
+                <li class="toggle"><span class="bars"></span></li>
             </ul>
 
         </nav>
-        <a href="/" class="button_link">
-            <button>
-                Contact Us
-            </button>
-        </a>
+
     </div>
 
     <!-- Main Content -->
@@ -75,7 +120,6 @@
 
     </div>
 
-    <!-- Footer Section -->
 
     <div class="footer_text">
 

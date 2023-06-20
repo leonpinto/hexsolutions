@@ -1,3 +1,5 @@
+@import '../../scss/animations';
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -42,18 +44,31 @@
 
                 .nav_link {
                     margin: 0 1vw;
+                    display: flex;
+                    flex-direction: column;
 
                     a {
                         font-size: 1.35rem;
                         font-weight: 200;
                         text-decoration: none;
                         color: #fff;
-                        transition: 0.3s ease-in-out;
+                        transition: 0.2s ease-in-out;
 
-                        &:hover {
-                            color: #80FFDB;
+                        
+                    }
+
+                    span {
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+
+                        span {
+                            animation: nav_link--hover 0.75s forwards;
                         }
                     }
+
+                    
 
                 }
 

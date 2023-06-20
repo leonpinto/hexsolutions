@@ -120,52 +120,6 @@
   box-shadow: 2px 2px 10px 10px #232323;
 }
 
-.content_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10vh;
-}
-.content_container .content_header {
-  max-width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url("images/arrows.svg") no-repeat bottom center;
-}
-.content_container .content_header #content_header {
-  font-size: 4rem;
-  font-weight: 100;
-  color: #fff;
-  letter-spacing: 1vw;
-}
-.content_container .main_content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 10vh auto;
-  max-width: 100vw;
-}
-.content_container .main_content--text {
-  width: 50vw;
-}
-.content_container .main_content--text h3 {
-  font-size: 3rem;
-  margin: 0 0 5vw 0;
-  color: #80FFDB;
-}
-.content_container .main_content--text p {
-  font-size: 1.5rem;
-  line-height: 150%;
-  color: #fff;
-}
-.content_container .main_content img {
-  max-width: 45vw;
-  margin-right: -5vw;
-}
-
 .footer_text {
   width: 100vw;
   display: flex;
@@ -201,6 +155,53 @@
 }
 .footer_text--items .footer_items a:hover {
   color: #80FFDB;
+}
+
+.content_container {
+  display: flex;
+  max-width: 100vw;
+  margin: 15vh 0 5vh 0;
+  justify-content: center;
+  align-items: center;
+}
+.content_container .content_container_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 80vw;
+}
+.content_container .content_container_wrapper .content_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5vh 0;
+}
+.content_container .content_container_wrapper .content_item .content_item--text {
+  max-width: 40vw;
+  margin-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content_container .content_container_wrapper .content_item .content_item--text h2 {
+  color: #80FFDB;
+  margin-bottom: 2vh;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.content_container .content_container_wrapper .content_item .content_item--text p {
+  color: white;
+  font-size: 1.3rem;
+}
+.content_container .content_container_wrapper .content_item .content_item--text p a {
+  color: #80FFDB;
+  font-weight: 600;
+}
+.content_container .content_container_wrapper .content_item img {
+  margin: 0 auto;
+  max-width: 30vw;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar {

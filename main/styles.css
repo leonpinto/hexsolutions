@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 100vw;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0px;
   transition: 0.4s ease-in-out;
 }
@@ -21,6 +21,9 @@
 }
 .header .title_row a:hover {
   color: #80FFDB;
+}
+.header .navbar {
+  display: flex;
 }
 .header .navbar .menu {
   margin-right: 1vw;
@@ -98,7 +101,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -10vh;
   background: url("images/arrows.svg") no-repeat bottom center;
 }
 .content_container .content_header #content_header {
@@ -169,11 +171,37 @@
   color: #80FFDB;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #292929;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-style: solid;
+  border-color: #80FFDB;
+  border-width: 2px;
+  background: #000;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #80FFDB;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 body {

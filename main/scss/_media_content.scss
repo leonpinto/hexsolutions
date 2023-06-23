@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 920px) {
+    .content_container {
+
+        margin-bottom: 2vh;
+
+        .content_header {
+
+            #content_header {
+                font-size: 2rem;
+            }
+        }
+
+
+        .main_content {
+            display: flex;
+            flex-direction: column-reverse;
+            
+            &--text {
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    font-size: 2rem;
+                    margin: 5vh 0;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 1.45rem;
+                    text-align: center;
+                }
+            }
+
+            img {
+                max-width: 90vw;
+            }  
+        }
+
+        
+    }
+}

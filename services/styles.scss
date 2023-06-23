@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 @import 'scss/header';
-@import 'scss/footer';
 @import 'scss/content';
+@import 'scss/footer';
 @import '../scss/scrollbar';
+@import 'scss/media';
+@import 'scss/media_content';
 
 
 * {
@@ -11,9 +13,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 body {
     background-color: #292929;
+    max-width: 99.9vw;
+    overflow-x: hidden;
 }

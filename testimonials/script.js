@@ -1,4 +1,6 @@
 const header = document.querySelector('.header');
+const navbar = document.querySelector('.navbar');
+
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;

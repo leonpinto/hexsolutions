@@ -1,0 +1,49 @@
+@media screen and (max-width: 920px) {
+
+    .content_container {
+
+        .content_container--wrapper {
+            max-width: 100vw;
+
+            .content_item {
+                flex-direction: column-reverse;
+
+                img {
+                    max-width: 85vw;
+                    margin-bottom: 5vh;
+                }
+
+                .content_item--text {
+                    max-width: 90vw;
+                    margin: none;
+                    justify-content: space-evenly;
+                    margin-left: 5vw;
+
+                    h2 {
+                        text-align: left;
+                        font-size: 1.75rem;
+                    }
+
+                }
+
+                .divider_row {
+                    display: flex;
+                    justify-content: center;
+                    
+                    .divider {
+                        height: 1px;
+                        width: 90vw;
+                        background-color: #80FFDB;
+                        margin-bottom: 10vh;
+                        filter: opacity(0.5);
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
+    
+
+}

@@ -1,0 +1,118 @@
+.content_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .contact {
+        width: 60vw;
+        margin: 15vh 0 10vh 0;
+        // background-color: #7f7f7f;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: #80FFDB;
+        border-radius: 30px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: 5vh 0;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .input {
+            max-width: 59vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: left;
+            background-color: #212121;
+            padding: 0 5vw;
+            border-radius: 20px;
+            margin-bottom: 5vh;
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: 300;
+                margin-right: 2vw;
+            }
+
+            &--name {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                input {
+                    margin: 5vh 0;
+                    height: 5vh;
+                    border-radius: 10px;
+                    outline: none;
+                    padding: 1vh 1vw;
+                    border: none;
+                    width: 21vw;
+                }
+
+            }
+
+            .details {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-left: 1vw;
+
+                div {
+                    margin: 0 1vw;
+
+                    input {
+                        margin: 1vh 0;
+                        height: 5vh;
+                        width: 16vw;
+                        border-radius: 10px;
+                        outline: none;
+                        padding: 1vh 1vw;
+                        border: none;
+                    }
+                }
+            }
+
+            &--message {
+                margin-top: 5vh;
+
+                textarea {
+                    margin-top: 1vh;
+                    height: 15vh;
+                    width: 35vw;
+                    border-radius: 10px;
+                    outline: none;
+                    padding: 1vh 1vw;
+                    border: none;
+                }
+            }
+
+            &--submit {
+                margin: 5vh 0;
+
+                button {
+                    border: none;
+                    border-radius: 30px;
+                    width: 15vw;
+                    height: 5vh;
+                    font-size: 1.5rem;
+                    background-color: #80FFDB;
+                    cursor: pointer;
+                    transition: 0.4s ease-in-out;
+                    // transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 15px 5px rgba(#80FFDB, .2);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

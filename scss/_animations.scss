@@ -1,0 +1,130 @@
+@keyframes nav_link--hover {
+    0% {
+        width: 0%;
+        height: 0%;
+        background-color: #80FFDB;
+    }
+    5% {
+        width: 10%;
+        height: 1px;
+        background-color: #80FFDB;
+    }
+    75% {
+        width: 100%;
+        height: 1px;
+        background-color: #80FFDB;
+    }
+    100% {
+        width: 100%;
+        height: 1px;
+        background-color: #80FFDB;
+        box-shadow: 0px 0px 10px 3px rgba($color: #80FFDB, $alpha: 0.8);
+        // box-shadow: -5px -5px 10px 5px rgba($color: #80FFDB, $alpha: 0.8);
+        overflow: visible;
+    }
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0px rgba($color: #fff, $alpha: .6);
+        background: rgba($color: #fff, $alpha: 0.6);
+    }
+    to {
+        box-shadow: 0 0 0 1000px rgba($color: #fff, $alpha: 0);
+        background: rgba($color: #fff, $alpha: 0);
+    }
+}
+
+@keyframes openTop {
+
+    0% {
+        transform: translateY(-5px) rotate(0deg);
+
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+
+    }
+    100% {
+        transform: translateY(0px) rotate(90deg);
+
+    }
+
+}
+
+@keyframes openMid {
+
+    50% {
+        transform: rotate(0deg);
+
+    }
+    100% {
+        transform: rotate(45deg);
+
+    }
+
+}
+
+@keyframes openBtm {
+
+    0% {
+        transform: translateY(5px) rotate(0deg);
+
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+
+    }
+    100% {
+        transform: translateY(0px) rotate(90deg);
+
+    }
+
+}
+
+@keyframes closedTop {
+
+    0% {
+        transform: translateY(-5px) rotate(0deg);
+
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+
+    }
+    100% {
+        transform: translateY(+5px) rotate(90deg);
+
+    }
+
+}
+
+@keyframes closedMid {
+
+    50% {
+        transform: rotate(0deg);
+
+    }
+    100% {
+        transform: rotate(45deg);
+
+    }
+
+}
+
+@keyframes closedBtm {
+
+    0% {
+        transform: translateY(5px) rotate(0deg);
+
+    }
+    50% {
+        transform: translateY(0px) rotate(0deg);
+
+    }
+    100% {
+        transform: translateY(0px) rotate(90deg);
+
+    }
+
+}
